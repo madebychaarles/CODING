@@ -118,11 +118,11 @@ class Orb {
 
   setBounds() {
     // how far from the { x, y } origin can each orb move
-    const maxDist = window.innerWidth < 1000 ? window.innerWidth / 5 : window.innerWidth / 7;
+    const maxDist = window.innerWidth < 900 ? window.innerWidth / 6 : window.innerWidth / 7;
     // the { x, y } origin for each orb (the bottom right of the screen)
     const originX = window.innerWidth / 2;
     const originY =
-      window.innerWidth < 1500
+      window.innerWidth < 1000
         ? window.innerHeight
         : window.innerHeight / 2;
 
