@@ -95,7 +95,7 @@ class Orb {
     this.fill = fill;
 
     // the original radius of the orb, set relative to window height
-    this.radius = random(window.innerHeight / 7, window.innerHeight / 5);
+    this.radius = random(window.innerHeight / 14, window.innerHeight / 12);
 
     // starting points in "time" for the noise/self similar random values
     this.xOff = random(0, 500);
@@ -118,11 +118,11 @@ class Orb {
 
   setBounds() {
     // how far from the { x, y } origin can each orb move
-    const maxDist = window.innerWidth < 800 ? window.innerWidth / 2 : window.innerWidth / 3;
+    const maxDist = window.innerWidth < 1000 ? window.innerWidth / 5 : window.innerWidth / 7;
     // the { x, y } origin for each orb (the bottom right of the screen)
     const originX = window.innerWidth / 2;
     const originY =
-      window.innerWidth < 800
+      window.innerWidth < 1500
         ? window.innerHeight
         : window.innerHeight / 2;
 
